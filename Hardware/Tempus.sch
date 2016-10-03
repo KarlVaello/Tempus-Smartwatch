@@ -7244,10 +7244,10 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <part name="P+4" library="KarlVaello-Simbols" deviceset="VCC" device=""/>
 <part name="P+5" library="KarlVaello-Simbols" deviceset="VCC" device=""/>
 <part name="S1" library="SparkFun-Retired" deviceset="TAC_SWITCH" device="SMD" value="RESET"/>
-<part name="J7" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS"/>
 <part name="LED1" library="adafruit" deviceset="LED" device="CHIPLED_0805"/>
 <part name="Y1" library="SparkFun-FreqCtrl" deviceset="RESONATOR" device="16MHZ" value="16MHZ"/>
 <part name="U$1" library="KarlVaello-Displays" deviceset="DISP_TFT18" device=""/>
+<part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="TESTPOINTS"/>
 </parts>
 <sheets>
 <sheet>
@@ -7261,6 +7261,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <wire x1="-53.34" y1="60.96" x2="-10.16" y2="60.96" width="0.3048" layer="94" style="shortdash"/>
 <wire x1="-10.16" y1="60.96" x2="-10.16" y2="38.1" width="0.3048" layer="94" style="shortdash"/>
 <wire x1="-10.16" y1="38.1" x2="-20.32" y2="38.1" width="0.3048" layer="94" style="shortdash"/>
+<wire x1="238.76" y1="-71.12" x2="-88.9" y2="-71.12" width="0.6096" layer="94"/>
 </plain>
 <instances>
 <instance part="U1" gate="U$1" x="119.38" y="63.5"/>
@@ -7283,10 +7284,10 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <instance part="P+4" gate="VCC" x="177.8" y="109.22"/>
 <instance part="P+5" gate="VCC" x="185.42" y="109.22"/>
 <instance part="S1" gate="S" x="50.8" y="86.36" rot="R90"/>
-<instance part="J7" gate="G$1" x="-33.02" y="50.8"/>
 <instance part="LED1" gate="G$1" x="142.24" y="15.24"/>
 <instance part="Y1" gate="G$1" x="88.9" y="66.04" rot="R270"/>
 <instance part="U$1" gate="G$1" x="129.54" y="-38.1"/>
+<instance part="J1" gate="G$1" x="-33.02" y="50.8"/>
 </instances>
 <busses>
 </busses>
@@ -7327,7 +7328,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <segment>
 <wire x1="-22.86" y1="48.26" x2="-17.78" y2="48.26" width="0.1524" layer="91"/>
 <label x="-17.78" y="48.26" size="1.27" layer="95" font="vector" ratio="9" xref="yes"/>
-<pinref part="J7" gate="G$1" pin="6"/>
+<pinref part="J1" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
@@ -7405,7 +7406,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <segment>
 <wire x1="-22.86" y1="53.34" x2="-17.78" y2="53.34" width="0.1524" layer="91"/>
 <label x="-17.78" y="53.34" size="1.27" layer="95" font="vector" ratio="9" xref="yes"/>
-<pinref part="J7" gate="G$1" pin="2"/>
+<pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="A4" class="0">
@@ -7445,7 +7446,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <segment>
 <wire x1="-40.64" y1="50.8" x2="-45.72" y2="50.8" width="0.1524" layer="91"/>
 <label x="-45.72" y="50.8" size="1.27" layer="95" font="vector" ratio="9" rot="R180" xref="yes"/>
-<pinref part="J7" gate="G$1" pin="3"/>
+<pinref part="J1" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -7569,7 +7570,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <segment>
 <wire x1="-22.86" y1="50.8" x2="-17.78" y2="50.8" width="0.1524" layer="91"/>
 <label x="-17.78" y="50.8" size="1.27" layer="95" font="vector" ratio="9" xref="yes"/>
-<pinref part="J7" gate="G$1" pin="4"/>
+<pinref part="J1" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -7581,7 +7582,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <segment>
 <wire x1="-40.64" y1="53.34" x2="-45.72" y2="53.34" width="0.1524" layer="91"/>
 <label x="-45.72" y="53.34" size="1.27" layer="95" font="vector" ratio="9" rot="R180" xref="yes"/>
-<pinref part="J7" gate="G$1" pin="1"/>
+<pinref part="J1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="D9" class="0">
@@ -7595,7 +7596,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <segment>
 <wire x1="-40.64" y1="48.26" x2="-45.72" y2="48.26" width="0.1524" layer="91"/>
 <label x="-45.72" y="48.26" size="1.27" layer="95" font="vector" ratio="9" rot="R180" xref="yes"/>
-<pinref part="J7" gate="G$1" pin="5"/>
+<pinref part="J1" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="N$1" class="0">
